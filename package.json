@@ -1,0 +1,36 @@
+{
+  "name": "@bleskomat/kraken-api-client",
+  "version": "1.0.0",
+  "description": "Client for the Kraken bitcoin exchange API",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run test:unit ; npm run test:integration",
+    "test:integration": "./node_modules/.bin/mocha --recursive ./test/integration",
+    "test:unit": "./node_modules/.bin/mocha --recursive ./test/unit"
+  },
+  "keywords": [
+    "kraken",
+    "bitcoin",
+    "exchange",
+    "api",
+    "client"
+  ],
+  "author": {
+    "name": "Charles Hill",
+    "email": "chill@degreesofzero.com"
+  },
+  "contributors": [
+    {
+      "name": "Carlos Garcia Ortiz",
+      "email": "yo@carlosgarciaortiz.com"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "10.0.0"
+  }
+}
