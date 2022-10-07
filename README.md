@@ -25,7 +25,7 @@ const KrakenApiClient = require('@bleskomat/kraken-api-client');
 
 const kraken = new KrakenApiClient();
 
-kraken.api('Ticker').then(result => {
+kraken.api('Ticker', { pair: 'XXBTZEUR' }).then(result => {
 	console.log(JSON.stringify(result, null, 2));
 }).catch(error => console.error(error));
 ```
